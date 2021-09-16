@@ -1,0 +1,131 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+header {
+  display: flex;
+  max-height: 10%;
+  padding: 40px;
+  justify-content: center;
+  flex-flow: column wrap;
+  align-items: center;
+  background: #13293d;
+  color: #fff;
+  border: 10px solid black;
+
+}
+
+
+#absolute-box {
+  position: absolute;
+  font-size: 200%;
+  top: 10px;
+  left: 10px;
+  background-color: black;
+  border: 5px solid blue;
+
+}
+
+
+nav {
+  display: flex;
+  justify-content: center;
+  border: 10px solid black;
+  border-top: none;
+  background-color: #b3afad;
+}
+
+nav a {
+  color: #13293d;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+}
+
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+a {
+  justify-content: center;
+  text-align: center;
+}
+aside {
+  flex: 1;
+  font-size: 150%;
+  background-color: #297aa8;
+  border: 10px solid black;
+  border-top: none;
+  border-bottom: none;
+  padding: 40px;
+  text-align: center;
+  
+}
+
+footer {
+  display: flex;
+  max-height: 50px;
+  padding: 40px;
+  justify-content: center;
+  flex-flow: column wrap;
+  align-items: center;
+  background: #13293d;
+  color: #fff;
+  border: 10px solid black;
+}
+
+
+.projects {
+  flex: 4;
+  background-color: #fff;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+
+
+.card {
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 10px;
+  padding: 10px;
+  flex: 0 0 400px;
+}
+
+.card header {
+  padding: 20px;
+}
+
+.card p {
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+}
+
+
+@media screen and (max-width: 768px) {
+  main,
+  nav {
+    flex-direction: column;
+  }
+  aside {
+    font-size: 100%;
+  }
+  .card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+}
