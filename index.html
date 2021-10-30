@@ -9,36 +9,36 @@
   <body>
     
     
-
+<!-- header welcoming visitors to my page -->
     <header>
       <div id="absolute-box">
         Russ McCallie
       </div>
      <h1>Welcome to my portfolio page!</h1>
       <p>I am a burgeoning developer whose portfolio will continue to grow over the coming weeks and months!</p>
-
+      <p id="currentDay" class="lead"></p>
+      <p id="currentTime" class="lead"></p>
     </header>
 
-    
+    <!-- navigation link placeholder for a future 'about me' page  -->
     <nav>
       <a href="#">About Me</a>
-      <a href="#">My Portfolio</a>
-      <a href="#">Contact Me</a>
     </nav>
 
     
     <main>
-      
+      <!-- aside with a picture of myself and detailing coding skills/knowledge -->
       <aside>
-        <h2>Once I have more knowledge and have created more projects...</h2>
-        <p>This aside will be filled with various languages I am fluent in and skillsets I have built!</p>
+        <img src="assets/images/Myprofilepic.jpeg" alt="My Profile Pic">
+        <h3>Over the past two months, I have learned a lot about several programming languages, including...</h3>
         <ul>
           <li>HTML</li>
           <li>CSS</li>
           <li>JavaScript</li>
         </ul>
+        <p>as well as various types of APIs and tools, such as Moment and Node.</p>
       </aside>
-     
+     <!-- section for completed and ongoing projects -->
       <div class="projects">
         <section class="card">
           <header>Refactoring Project</header>
@@ -51,38 +51,38 @@
         </section>
 
         <section class="card">
-          <header>Tech Project</header>
-          <img src="./assets/images/Tech.jpg" alt="Tech project" 
+          <header>Password Generator Project</header>
+          <img src="assets/images/password-generator.png" alt="Password Generator" 
             style="height: 251.67px;">
           <div style="text-align:center">
-            <a href="#" target="_blank">Deployed Application</a>
-            <a href="#" target="_blank">Github Repo</a>
+            <a href="https://rmccallie.github.io/Password-Generator-Project/" target="_blank">Deployed Application</a>
+            <a href="https://github.com/rmccallie/Password-Generator-Project" target="_blank">Github Repo</a>
           </div>
         </section>
 
         <section class="card">
-          <header>AI Project</header>
-          <img src="./assets/images/AI-proj.gif" alt="AI project" 
+          <header>Work Day Scheduler Project</header>
+          <img src="assets/images/Work-Schedule-Example.PNG" alt="Work Day Scheduler" 
             style="height: 251.67px;">
           <div style="text-align:center">
-            <a href="#" target="_blank">Deployed Application</a>
-            <a href="#" target="_blank">Github Repo</a>
+            <a href="https://rmccallie.github.io/Work-Day-Scheduler-Project/" target="_blank">Deployed Application</a>
+            <a href="https://github.com/rmccallie/Work-Day-Scheduler-Project" target="_blank">Github Repo</a>
           </div>
         </section>
+        
         <section class="card">
-
-          <header>Flash Project</header>
-          <img src="./assets/images/Flash-game.jpg" alt="Flash project" 
+          <header>Medical Assistance Locator App</header>
+          <img src="assets/images/Canta.PNG" alt="Canta" 
             style="height: 251.67px;">
           <div style="text-align:center">
-            <a href="#" target="_blank">Deployed Application</a>
-            <a href="#" target="_blank">Github Repo</a>
+            <a href="https://kennedysam168.github.io/Group-Project-1/" target="_blank">Deployed Application</a>
+            <a href="https://github.com/kennedysam168/Group-Project-1" target="_blank">Github Repo</a>
           </div>
         </section>
       </div>
     </main>
 
-    
+    <!-- contact information -->
     <footer>
       <h3>
         <ul>
@@ -95,5 +95,9 @@
         </ul>
       </h3>
     </footer>
+    <!-- scripts for jquery, moment.js, and external js file--> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="assets/js/script.js"></script>
   </body>
 </html>
